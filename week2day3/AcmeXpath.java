@@ -26,7 +26,7 @@ driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
  //Get the title of the page
 String title=driver.getTitle();
 System.out.println(title);
-//Logout 
+//Logout child to parent Xpath
 driver.findElement(By.xpath("//a[contains(text(),'Log Out')]/parent::li")).click();
 driver.close();
 
